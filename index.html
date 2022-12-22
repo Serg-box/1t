@@ -6,10 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
 </head>
 
 <body>
+    <header>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">Это хедер</h1>
+            <!-- Кнопка-триггер модального окна -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Модальное окно, обратная связь
+            </button>
+            <!-- <a href="#footer" class="btn btn-itd btn-lg text-uppercase">Заказать</a> -->
+        </div>
+    </div>
+</div>
+    </header>
+    <main>
 
+    </main>
+    <footer>
+
+    </footer>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Заголовок модального окна</h1>
+                <button type="button" class="btn-close btn btn-outline-danger" data-bs-dismiss="modal"
+                    aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+
+                <form class="contact_form" action="contact-form.php" method="post">
+                    <!-- <p>
+                        <label for="name">Имя:</label>
+                        <input type="text" class="form-control" name="name" placeholder="Введите ваше имя" required />
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="email"
+                            placeholder="Введите адрес электронной почты" required />
+                        <span class="form_hint">Правильный формат "name@something.com"</span>
+                    </p>
+                    <p>
+                        <label for="tel">Телефон:</label>
+                        <input type="tel" class="form-control" name="tel" placeholder="Введите номер телефона"
+                            required />
+                        <span class="form_hint">Правильный формат "+71234567890"</span>
+                    </p>
+
+                    <p>
+                        <label for="message">Текст сообщения:</label>
+                        <textarea class="form-control" name="message" cols="40" rows="6" required></textarea>
+                    </p>
+
+                    <input class="form-control" id="exampleFormControlTextarea1" rows="3" name="bezspama" type="text"
+                        style="display:none" value="" />
+                    <p> -->
+                        <button class="submit btn btn-outline-info" type="submit">Кнопка</button>
+                    </p>
+                </form>
+
+            </div>
+            <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Понял</button>
+                </div> -->
+        </div>
+    </div>
+</div>
+
+
+    <script src="js\bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
